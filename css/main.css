@@ -1,288 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Suez+One');
 
-@import url("https://fontsgoogleapis.com/csss?family=Lato|Raleway");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+
 
 body {
   background-color: #fafafa;
-  font-family: "Lato";
-  font-weight: 300;
-  font-size: 16px;
-  color: #555;
-
-  -webkit-font-smoothing: antialiased;
-  -webkit-overflow-scrolling: touch;
-
-  margin-top: 70px;
+  font-family: Trebuchet MS, Helvetica;
 }
 
 
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  /* Заголовки */
-  font-family: "Raleway";
-  font-weight: 300;
-  color: black;
+header {
+  width: 100%;
+  padding: 10px 0.5% 0px 0.5%;
+  background: transparent;
+  float: left;
+  position: fixed;
 }
 
 
 
-
-p {
-  line-height: 28px;
-  margin-bottom: 25px;
-}
-
-
-
-.centered {
-  text-align: center;
-}
-
-
-
-
-
-.menu {
-  background-color: #c4c4c4;
-  padding-bottom: 30px;
-}
-
-
-
-
-.str {
-  display: flex;
-  list-style-type: none;
-  
-}
-
-
-
-.str li {
-  margin: 0 100px;
-  font-size: 30px;
-  padding-top: 30px;
-}
-
-
-
-.str a {
-  text-decoration: none;
-  color: #7b7b7b;
-}
-
-
-.str a:hover {
-  text-decoration: none;
-  color: #acacac;
-}
-
-
-
-@media screen and (max-width: 1679px) {
-  .str li {
-    margin: 0 80px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-
-
-
-@media screen and (max-width: 1550px) {
-  .str li {
-    margin: 0 70px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-@media screen and (max-width: 1450px) {
-  .str li {
-    margin: 0 60px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 1350px) {
-  .str li {
-    margin: 0 50px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-
-@media screen and (max-width: 1250px) {
-  .str li {
-    margin: 0 40px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-
-
-@media screen and (max-width: 1150px) {
-  .str li {
-    margin: 0 30px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-
-@media screen and (max-width: 1000px) {
-  .str li {
-    margin: 0 20px;
-    font-size: 30px;
-    padding-top: 30px;
-  }
-}
-
-
-
-@media screen and (max-width: 900px) {
-  .str li {
-    margin: 0 30px;
-    font-size: 20px;
-    padding-top: 30px;
-  }
-}
-
-
-
-@media screen and (max-width: 800px) {
-  .str li {
-    margin: 0 20px;
-    font-size: 20px;
-    padding-top: 30px;
-  }
-}
-
-
-
-
-
-
-.slider__back {
-  background-image: url(../img/steampunk1.jpg);
-  color: #fafafa;
-}
-
-
-
-
-.slider__baack {
-  background-image: url(../img/steampunk2.jpg);
-  color: #fafafa;
-}
-
-
-
-
-.slider__baaack {
-  background-image: url(../img/steampunk3.jpg);
-  color: #fafafa;
-}
-
-
-
-
-.slider__baaaack {
-  background-image: url(../img/steampunk4.jpg);
-  color: #fafafa;
-}
-
-
-
-
-
-.slider {
-  position: relative;
-  overflow: hidden;
-}
-
-.slider__wrapper {
-  display: flex;
-  transition: transform 1s ease;
-}
-
-.slider__item {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-.slider__control {
-  position: absolute;
-  top: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
+header #Logo {
   color: #fff;
-  text-align: center;
-  opacity: 0.5;
-  height: 50px;
-  transform: translateY(-50%);
-  background: rgba(0, 0, 0, .5);
+  cursor: pointer;
 }
 
-.slider__control:hover,
-.slider__control:focus {
+
+
+header #Logo span {
+  font-size: 1.7em;
+  line-height: 45px;
+  margin-left: 40px;
+  font-family: 'Suez One', serif;
+}
+
+
+
+@media (min-width: 701px) {
+  #Logo {
+    float: left;
+    width: 30%;
+    font-size: 1.1em;
+  }
+
+
+
+  #about {
+    float: right;
+    width: 67%;
+  }
+}
+
+
+
+@media (max-width: 700px) {
+  #Logo {
+    margin-top: 15px;
+    width: 100%;
+    font-size: 1.5em;
+  }
+
+
+
+  #about {
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
+#about {
+  text-align: center;
+  font-size: 1em;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+#about > a {
   color: #fff;
   text-decoration: none;
-  outline: 0;
-  opacity: .9;
 }
 
-.slider__control_left {
-  left: 0;
+
+
+#about > a:hover {
+  color: #b0b0b0;
+  text-decoration: underline;
 }
 
-.slider__control_right {
-  right: 0;
+
+
+#about > a:not(:last-child) {
+  margin-right: 7%;
 }
 
-.slider__control::before {
-  content: '';
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background: transparent no-repeat center center;
-  background-size: 100% 100%;
+
+
+.fixed {
+  z-index: 5000;
+  background-color: #fff;
+  border-bottom: 1px solid silver;
 }
 
-.slider__control_left::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+
+
+header.fixed #Logo {
+  color: #343434;
 }
 
-.slider__control_right::before {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
-}
 
-.slider__item>div {
-  line-height: 250px;
-  font-size: 100px;
+
+.fixed #about a {color: #343434;}
+
+
+
+.fixed #about a:hover {color: #7c7c7c;}
+
+
+
+#top {
+  width: 100%;
+  height: 1000px;
+  background-image: url('../img/steampunk1.jpg');
+  background-blend-mode: multiply;
+  background-color: #3d5f7b;
+  background-size: cover;
   text-align: center;
+  color: #fff;
 }
+
+
+
+@media (min-width: 1001px) {
+  #top {
+    font-size: 3em;
+  }
+}
+
+
+
+@media (max-width: 1000px) and (min-width: 651px) {
+  #top {
+    font-size: 2em;
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  #top {
+    font-size: 1.3em;
+    padding-top: 50%;
+  }
+}
+
+
+
+#top h1 {
+  padding-top: 20%;
+}
+
+
+
+#top h3 {
+  color: #ccc;
+}
+
+
+
